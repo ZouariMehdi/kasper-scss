@@ -1,0 +1,20 @@
+@use "../variables/colors" as *;
+
+.landing-page {
+  background-color: $second;
+  .container-fluid {
+    height: 100vh;
+    background-image: url(/kasper-scss/images/landing.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .text {
+      h3 {
+        color: $main;
+        font-size: 80px !important;
+      }
+      p {
+      }
+    }
+  }
+}

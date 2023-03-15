@@ -1,0 +1,13 @@
+@use "../variables/colors" as *;
+
+.features {
+  background-color: $second;
+
+  .container {
+    .row {
+      i {
+        color: $main;
+      }
+    }
+  }
+}

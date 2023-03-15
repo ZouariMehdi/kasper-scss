@@ -1,0 +1,39 @@
+@use "../variables/colors" as *;
+
+.about {
+  > .row .description {
+    @media (max-width: 992px) {
+      width: 100%;
+    }
+  }
+  .about-img {
+    position: relative;
+    @media (max-width: 992px) {
+      margin-bottom: 60px;
+      text-align: center;
+    }
+    &::after {
+      @media (max-width: 992px) {
+        display: none;
+      }
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 80px;
+      height: calc(100% + 50px);
+      transform: translateY(-25px);
+      background-color: $main;
+      z-index: -1;
+    }
+  }
+  .description {
+    width: 50%;
+    p {
+      line-height: 1.9;
+      &:first-child {
+        font-weight: bold;
+      }
+    }
+  }
+}

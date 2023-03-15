@@ -1,0 +1,27 @@
+@use "../variables/colors" as *;
+
+.Services {
+  margin-bottom: 50px;
+}
+i {
+  color: $main;
+}
+.img {
+  img {
+    height: 100%;
+  }
+  display: inline-block;
+  height: 350px;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    left: -10px;
+    top: 0;
+    background-color: $main;
+    height: calc(100% + 50px);
+    transform: translateY(-25px);
+    width: 80px;
+    z-index: -1;
+  }
+}
